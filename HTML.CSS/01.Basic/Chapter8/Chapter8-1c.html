@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザーに「入力必須」であることを伝えるためのHTMLの例</title>
+    <style>
+        .required {
+            padding: 0.5em;
+            font-size: 0.75;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <p><label for="name-field">お名前<span class="required">*必須</span><br>
+        <input type="text" name="name" id="name-field" required></label></p>
+    </form>
+</body>
+</html>
