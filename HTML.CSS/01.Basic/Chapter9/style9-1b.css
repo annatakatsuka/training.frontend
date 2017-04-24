@@ -1,9 +1,8 @@
 @charset
     
-    body {
-        margin: 0;
+body {
+    margin: 0;
 }
-
 .header-inner {
     background: #bad7f5;
 }
@@ -21,18 +20,15 @@
 .footer-inner {
     background: #bad7f5;
 }
-
 body {
     color: #444;
 }
 main p:last-child {
     margin-bottom: 0;
 }
-
 .main-title {
     margin: 0;
 }
-
 .copyright {
     margin: 0;
 }

@@ -3,10 +3,13 @@
 body {
     margin: 0;
 }
-.container{
+.container {
     margin: 0 auto 0 auto;
-    padding: 0 16px 0 16px;
-    width: 980px;
+    max-width: 1000px;
+}
+section .container{
+    display: flex;
+    flex-flow: column;
 }
 /*
 各パートにパッディング、背景、テキスト色など指定する
@@ -21,12 +24,12 @@ body {
     color: #fff;
     background: #0086f9;
 }
-.main-inner {
+main {
     padding: 20px 10px 20px 10px;
     background: #fffde3;
     height: 400px;
 }
-.sidebar-inner {
+.sidebar {
     padding: 20px 10px 20px 10px;
     background: #c0f5b9;
 }
@@ -34,12 +37,24 @@ body {
     padding: 20px 16px 10px 16px;
     background: #bad7f5;
 }
+@media only screen and (min-width: 768px){
+    section .container {
+        flex-flow: row;
+    }
+    main {
+        flex: 1 1 auto;
+    }
+    .sidebar {
+        flex: 0 0 340px;
+    }
+}
 body {
     color: #444;
 }
 main p:last-child {
     margin-bottom: 0;
 }
+
 .main-title {
     margin: 0;
 }
