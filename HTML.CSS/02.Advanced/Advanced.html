@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>シングルページ</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400" >
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="Advance.css">
 </head>
 <body>
     <header>
-        <p>web designer's portfolio</p>
-        <h1>HI,My NAME IS...</h1>
-        <p>check out some of my works</p>
+        <p class="sub-title">Web designer's portfolio</p>
+        <h1>HI,MY NAME IS...</h1>
+        <p class="sub-subtitle">check out some of my works.</p>
         <ul class="header-link">
-            <li><a href="#about">LEARN MORE</a></li>
-            <li><a href="#contact">SEND MASSAGE</a></li>
+            <li id="learn"><a href="#about">LEARN MORE</a></li>
+            <li id="send"><a href="#contact">SEND MASSAGE</a></li>
         </ul>
     </header>
     <section id="about">
@@ -26,24 +27,55 @@
     <section id="works">
         <h2>WORKS</h2>
         <ul class="works-list">
-            <li><img src="tree.jpg" alt="tree"><p>ひとつめの制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br><a href="#">READ MORE</a></p></li>
-            <li><img src="building.jpg" alt="building"><p>ふたつめ制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br><a href="#">READ MORE</a></p></li>
-            <li><img src="lake.jpg" alt="lake"><p>みっつめの制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br><a href="#">READ MORE</a></p></li>
-            <li><img src="sky.jpg" alt="sky"><p>よっつめの制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br><a href="#">READ MORE</a></p></li>
+            <li>
+                <img src="tree.jpg" alt="tree">
+                <div class="up">
+                    <p>
+                        ひとつめの制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br>
+                        <a href="#">READ MORE</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="building.jpg" alt="building">
+                <div>
+                    <p>
+                        ふたつめ制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br>
+                        <a href="#">READ MORE</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="lake.jpg" alt="lake">
+                <div class="up">
+                    <p>
+                        みっつめの制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br>
+                        <a href="#">READ MORE</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+            <img src="sky.jpg" alt="sky">
+            <div class="up">
+                <p>
+                    よっつめの制作事例が入ります<br>簡単な説明が入ります。<br>使用ツール：XXX,XXX,XXX<br>
+                    <a href="#">READ MORE</a>
+                </p>
+            </div></li>
         </ul>
     </section>
     <section id="skills">
        <h2>MY SKILL</h2>
         <ul class="skills-list">
             <li>
-                <span class="icon"><i class="fa fa-lightbulb-o"></i></span><header>IDEA</header><p>何かを考えることが好きです。<br>新しいことを思いついては試しています。<br>ディレクションの経験もあります。</p>
+                <span class="icon"><i class="fa fa-lightbulb-o"></i></span><div>IDEA</div><p>何かを考えることが好きです。<br>新しいことを思いついては試しています。<br>ディレクションの経験もあります。</p>
             </li>
             <li>
-                <span class="icon"><i class="fa fa-paint-brush"></i></span><header>DESIGN</header>
+                <span class="icon"><i class="fa fa-paint-brush"></i></span><div>DESIGN</div>
                 <p>見た目の綺麗さだけじゃなくて、<br>使いやすさ情報の伝わりやすさなど、<br>その先まで考えることを意識しています。</p>
             </li>
             <li>
-                <span class="icon"><i class="fa fa-code"></i></span><header>CODING</header><p>HTML/CSSコーディングを行います。<br>正しく美しいマークアップと、<br>今後の変更への強さを考慮しています。</p>
+                <span class="icon"><i class="fa fa-code"></i></span><div>CODING</div><p>HTML/CSSコーディングを行います。<br>正しく美しいマークアップと、<br>今後の変更への強さを考慮しています。</p>
             </li>
         </ul>
     </section>
