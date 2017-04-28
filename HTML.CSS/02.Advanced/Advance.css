@@ -28,7 +28,6 @@ header {
     background:#FFFFFF;
     width: 140px;
     height: 2px;
-    padding: center;
     margin: 0 30px;
     vertical-align: middle;
 }
@@ -52,17 +51,37 @@ ul.header-link li{
     display:inline-block;
     color: #FFFFFF;
     text-decoration: none;
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    border-radius: 4px;
 }
-ul.header-link li>a{
+ul.header-link li > a{
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.2rem;
-    width:200px;
-    padding: 20px;
 }
 ul.header-link li#learn{
-    background:#AAAAAA;
+    background: #AFA58B;
 }
 ul.header-link li#send {
-    background: #888800;
+    background:#D29E04;
+}
+
+h2 {
+    font-size: 4rem;
+}
+h2::after,
+h2::before{
+    content: "";
+    display: inline-block;
+    background:;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+    vertical-align: middle;
+}
+section.about {
+    background: #FFFFFF;
+    padding: 80px 30px 80px 30px;
 }
