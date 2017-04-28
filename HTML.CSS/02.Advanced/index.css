@@ -50,21 +50,25 @@ ul.header-link li{
     margin: 10px;
     display:inline-block;
     color: #FFFFFF;
+    border-radius: 4px;
+}
+ul.header-link li:hover{
+    opacity: 0.9;
+}
+ul.header-link li > a{
+    color: #FFFFFF;
     text-decoration: none;
+    display:inline-block;
     width: 200px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1.2rem;
     border-radius: 4px;
 }
-ul.header-link li > a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-ul.header-link li#learn{
+ul.header-link li.learn{
     background: #AFA58B;
 }
-ul.header-link li#send {
+ul.header-link li.message {
     background:#D29E04;
 }
 
@@ -75,7 +79,6 @@ h2::after,
 h2::before{
     content: "";
     display: inline-block;
-    background:;
     width: 140px;
     height: 2px;
     margin: 0 30px;
