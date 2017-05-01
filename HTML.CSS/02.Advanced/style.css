@@ -49,6 +49,8 @@ h1 {
 ul.header-link {
     list-style: none;
     padding-left: 0;
+    margin: 0;
+    
 }
 ul.header-link li{
     margin: 10px;
@@ -89,29 +91,80 @@ h2 {
     position: relative;
     padding-bottom: 15px;
     margin-bottom: 15px;
+    margin-top: 30px;
 
 }
 h2::before,
 h2::after {
     content: "";
-    display: inline-block;
+/*     display: inline-block;
     width: 100%;
     height: 0.4px;
     margin: 0;
-    background: #AAAAAA;
+    background: #AAAAAA; */
     position: absolute;
     left:0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
 }
 h2::before {
-    top:50px;
+    bottom:5px
+    /* top:50px */
 }
 
-h2::after {
+/* h2::after {
     top:55px;
-}
+} */
 .about-text {
     margin: 30px;
-}
-br {
     line-height: 2.5;
+}
+.about-text>br {
+    line-height: 2.5;
+}
+
+/* MYSKILL */
+#skills {
+    background: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom:80px;
+}
+.skills-list {
+    margin: 50px auto 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.skills-list li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    font-size: 8rem;
+    color: #f1b400;
+    border: 4px solid;
+    line-height:142px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.icon::before {
+    line-height: normal;
+    vertical-align: middle;
+}
+.skill-title {
+    font-size: 2rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.skills-list p {
+    line-height: 2;
 }
