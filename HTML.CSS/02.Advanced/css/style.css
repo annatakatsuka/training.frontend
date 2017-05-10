@@ -389,7 +389,7 @@ footer {
         display: block;
         width: 80%;
         margin: 10px auto;
-        vertical-align: "";
+        vertical-align: middle;
         text-align: center;
     }
     h1 {
@@ -461,3 +461,4 @@ footer {
     .works-list>li:after {
         height: 100%;
     }
+}
