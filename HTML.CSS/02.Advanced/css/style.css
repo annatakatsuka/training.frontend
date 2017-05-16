@@ -102,16 +102,16 @@ ul.header-link {
     margin: 0;
     letter-spacing: 1px;
 }
-ul.header-link li{
+ul.header-link>li{
     margin: 10px;
     display:inline-block;
     color: #FFFFFF;
     border-radius: 4px;
 }
-ul.header-link li:hover{
+ul.header-link>li:hover{
     opacity: 0.9;
 }
-ul.header-link li > a{
+ul.header-link>li > a{
     color: #FFFFFF;
     text-decoration: none;
     display:inline-block;
@@ -121,10 +121,10 @@ ul.header-link li > a{
     font-size: 1.2rem;
     border-radius: 4px;
 }
-ul.header-link li.learn{
+ul.header-link>li.learn{
     background: #AFA58B;
 }
-ul.header-link li.message {
+ul.header-link>li.message {
     background:#D29E04;
 }
 
@@ -433,12 +433,12 @@ footer copy {
     .skill-list p {
         font-size: 1.3rem;
     }
-    .skills-list li+li {
+    .skills-list>li+li {
         display: inline-block;
         margin: 0;
         margin-top: 40px;
     }
-    .skills-list li:last-child {
+    .skills-list>li:last-child {
         margin-bottom: 40px;
     }
     .skills-list p {
@@ -468,7 +468,7 @@ footer copy {
         position: relative;
         z-index: 1;
     }
-    .works-list li>img {
+    .works-list>li>img {
         margin: 0;
         display: none;
      }
